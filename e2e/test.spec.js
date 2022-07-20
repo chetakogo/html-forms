@@ -30,8 +30,8 @@ describe('', () => {
   });
 
   afterAll(async () => {
-    await browser.close();
     server.kill();
+    await browser.close();
   });
 
   test('test button popover', async () => {
